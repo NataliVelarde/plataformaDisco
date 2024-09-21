@@ -1,0 +1,170 @@
+body{
+    background-color: rgb(105, 100, 100);
+}
+.body1{
+    background-color: rgb(168, 72, 8);
+}
+
+.Parrafo{
+    color: rgb(7, 7, 7); 
+    background-color: rgb(209, 209, 203);
+    padding: 1%;
+    opacity: 60%;    
+    text-align: center;
+    font-size: large;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif   
+
+    
+}
+.Titulo{
+    
+    text-align: center;
+    font-size: 2rem;
+    
+    
+}
+
+/*- para que sea garnde tambien -. font-size: x-large;---
+padding: 30px;
+margin: 10px;
+text-align: center;
+font-size: large;
+padding: 7%;
+
+
+  */
+#id{
+    text-align: center;
+   
+    
+}
+
+
+.Titulo2{
+    color: rgb(243, 238, 238); 
+    background-color: rgb(0, 0, 0);    
+    border-radius: 50px;
+    margin: auto;    
+    width: 500px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif  
+
+    
+   
+}
+.container{
+    border: 5px solid rgb(236, 236, 236);
+    display: flex;
+    justify-content: center;
+}
+.div{
+    width: 800px;
+    height: 800px;
+    justify-content: center;
+    background-color: rgb(121, 121, 121); 
+}
+.Titulo3{
+    color: rgb(243, 238, 238); 
+    background-color: rgb(168, 72, 8);   
+    border-radius: 50px;
+    margin: auto;    
+    width: 200px;
+    height: 50px;
+    margin-top: 50px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif  
+}
+.marge{
+    height: 50px;
+}
+.fascinate-inline-regular {
+    font-family: "Fascinate Inline", system-ui;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+
+  .Titulo4{
+    color: rgb(10, 10, 10);       
+    border-radius: 50px;
+    margin: auto;    
+    width: 500px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif  
+
+    
+   
+}
+#uno{
+ position: fixed;
+
+ bottom: 35px;
+ right: 35px;
+ 
+}
+.atras{
+    width: 100%;
+  
+}
+
+#dos{
+   
+    position: fixed;
+       justify-content: center;
+       bottom: 150px;
+       right: 350px;
+       background-color: rgb(116, 116, 116);
+      width: 50%;
+      height: 300px;
+      border: 5px solid rgb(14, 13, 13);
+   
+   
+ 
+
+}
+ 
+#album{
+background-image: url(album\ 3.png);
+background-repeat: no-repeat;
+background-size: cover;
+}
+#album1{
+background-image: url(album2.png);
+background-repeat: no-repeat;
+background-size: cover;
+
+}
+#album2{
+    background-image: url(album1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+    }
+
+#tres{
+        position: fixed;
+        border-radius: 50px;
+        bottom: 35px;
+        right: 35px;
+        
+       
+        
+       }
+.archivo-black-regular {
+
+        font-family: "Archivo Black", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+      }
+#cuatro{
+        position: fixed;
+        border-radius: 50px;
+        bottom: 90px;
+        right: 35px;
+        
+       
+        
+       }    
+      
+#cinco{
+       
+        border-radius: 50px; 
+          
+     }
