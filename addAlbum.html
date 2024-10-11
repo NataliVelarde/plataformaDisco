@@ -6,24 +6,210 @@
     <link rel="shortcut icon" href="favicon (1).ico" type="image/x-icon">
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
+        <script src="addAlbum.js"></script>
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap" rel="stylesheet">
     <link href="Stylo.css" rel="stylesheet" type="text/css">
     <title>ALBUM</title>
 </head>
-<body class="bg-gray-900" > 
-    <div class="text-neutral-50 font-serif text-6xl text-center mt-1.5 p-1.5"><h1>N T V G</h1></div>
+<body class="bg-neutral-950" > 
+    
+    
 
-    <div  class="flex justify-center ...">
-        <div id="album" class="bg-gray-600 pr-2.5 m-2.5 h-80 w-80 my-8"> <a  class="archivo-black-regular text-white" href="https://www.youtube.com/playlist?list=PLo2ygdeyksELk7M8VgTykxe2Dnb25_WnU" >  <img src="youtube.png" alt="nada"> </a>  </div>
-        <div  id="album2" class="bg-gray-600 pr-2.5 m-2.5 h-80 w-80 my-8 "> <a  class="archivo-black-regular text-white" href="https://www.youtube.com/playlist?list=PLZv9axzuJvQbUlZjipFAprJ8iHjyKhgxF" > <img src="youtube.png" alt="nada"> </a> </div>
-        <div id="album1" class="bg-gray-600 pr-2.5 m-2.5 h-80 w-80 my-8  ">  <a  class="archivo-black-regular text-white" href="https://www.youtube.com/playlist?list=PLZv9axzuJvQY1z2TKrizRVvA5grwVSbKn" > <img src="youtube.png" alt="nada"> </a></div>
+    <nav class="bg-neutral-950 p-4">
+        <div class="flex justify-between items-center">
+            <h1 class="text-white text-xl font-bold hover:text-yellow-500"> <a class="hover:underline font-bold hover:text-yellow-500" onclick="goBack()">Atras</a> </h1>
+
+            
+
+        <button id="menu-button" class="block text-white focus:outline-none sm:hidden">
+            <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+            </svg>
+        </button>
+       <ul id="menu-list" class="hidden sm:flex sm:space-x-4 text-white text-lg">
+        <li><a href="index.html" class="hover:underline font-bold hover:text-yellow-500">Inicio</a></li>
+            
+
+            <!-- <li><a href="index.html" class="hover:underline">Inicio</a></li> -->
+            <li><a href="#sumar" class="hover:underline font-bold text-yelow hover:text-yellow-500">Sumar Álbum</a></li>
+            <li><a href="tour.html" class="hover:underline font-bold hover:text-yellow-500">Tours</a></li>
+            <li><a href="login.html" class="hover:underline font-bold hover:text-yellow-500">Iniciar Sesión</a></li>
+        </ul>
+        </div>
+    </nav>
+    <div class="text-neutral-50 font-serif text-6xl text-center mt-1.5 p-1.5 "><h1> N T V G</h1></div> 
+<div>
+
+<br>
+<!--albunes son 3 -->
+
+   <div> <div  class="flex justify-center ... ">
+  
+    
+<!--esto es nuevo album -->
+<div >
+    <a  href="album.html">
+    <img  src="album 3.png" class="m-4"><span class="delete-button text-white font-bold hover:text-red-500 ml-4" onclick="deleteAlbum(this)">🗑️ Borrar Album</span>
+
+    </a>
+ </div>
+
+ <div >
+    <a href="album1.html">
+    <img  src="album2.png" class="m-4"><span class="delete-button text-white font-bold hover:text-red-500 ml-4" onclick="deleteAlbum(this)">🗑️ Borrar Album</span>
+    </a>
+ </div>
+ 
+ <div>
+    <a href="album2.html">
+    <img  src="album1.png" class="m-4"><span class="delete-button text-white font-bold hover:text-red-500 ml-4" onclick="deleteAlbum(this)">🗑️ Borrar Album</span>
+    </a>
+ </div>
+</div>
+
+
+
+<div> <div  class="flex justify-center ... ">
+<div >
+    <a  href="album.html">
+    <img  src="album5.png" class="m-4"><span class="delete-button text-white font-bold hover:text-red-500 ml-4" onclick="deleteAlbum(this)">🗑️ Borrar Album</span>
+
+    </a>
+ </div>
+
+ <div >
+    <a href="album1.html">
+    <img  src="album6.png" class="m-4"><span class="delete-button text-white font-bold hover:text-red-500 ml-4" onclick="deleteAlbum(this)">🗑️ Borrar Album</span>
+    </a>
+ </div>
+ 
+ <div>
+    <a href="album2.html">
+    <img  src="album7.png" class="m-4"><span class="delete-button text-white font-bold hover:text-red-500 ml-4" onclick="deleteAlbum(this)">🗑️ Borrar Album</span>
+    </a>
+ </div>
+</div>
+
+
+
+ 
+ 
+
+
+<!-- Albunes viejos
+        <div  id="album2" class="bg-gray-600 pr-2.5 m-2.5 h-80 w-80 my-8 "> <a  class="archivo-black-regular text-black" href="album2.html" >  🎵  Escuchar 🎵 </a> </div>
+        <div id="album1" class="bg-gray-600 pr-2.5 m-2.5 h-80 w-80 my-8  ">  <a  class="archivo-black-regular text-black" href="album1.html" >  🎵  Escuchar 🎵 </a></div>
+    </div>-->
+
+
+     
+  <!--<div class="text-center"> <a href="index.html" class="text-neutral-50 font-serif text-2xl  mt-1.5 p-1.5"> Volver</a></div> 
+    <div  id="tres" class="bg-black pr-2.5 m-2.5 h-10 w-60 my-5 text-slate-100 text-center "> <a  class="archivo-black-regular" href="tour.html" >TOURS  </a>  </div>  
+    
+    -->
+    
+</div>
+
+<br>
+<br>
+<br>
+<!--viejo album 
+<main class="archivo-black-regular">
+    <div class="titulo">
+        <br>
+        
+        <div class="text-neutral-50 font-serif text-6xl text-center mt-1.5 p-1.5 "><h2>Nuevo Álbum</h2></div>
+    </div>
+    <form class="formulario-albumOtro" action="" method="POST">
+        <label for="titulo">Título:</label>
+        <input type="text" id="titulo" name="titulo" required>
+
+        <label for="ano">Año de Lanzamiento:</label>
+        <input type="number" id="ano" name="ano" required>
+
+        <label for="descripcion">Descripción:</label>
+        <textarea id="descripcion" name="descripcion" rows="4" required></textarea>
+
+        <label for="imagen" class="block text-gray-700 font-bold mb-2">URL de la Imagen:</label>
+        <input type="url" id="imagen" name="imagen" placeholder="Introduce la URL de la imagen" class="w-full p-2 border border-gray-300 rounded" required>
+
+        <button type="submit" class="btn">Agregar Álbum</button>
+        <section id="sumar">
+    </form>
+</main>
+<br> -->
+
+
+
+
+
+
+<!--Suma de album -->
+
+
+<div class="text-neutral-50 font-serif text-6xl text-center mt-1.5 p-1.5  bg-green-700"><h2>Nuevo Álbum</h2></div>
     </div>
     
-     
-   <div class="text-center"> <a href="index.html" class="text-neutral-50 font-serif text-2xl  mt-1.5 p-1.5"> Volver</a></div>
 
-    <div  id="tres" class="bg-black pr-2.5 m-2.5 h-10 w-60 my-5 text-slate-100 text-center "> <a  class="archivo-black-regular" href="tour.html" >TOURS  </a>  </div>
-    <div  id="cuatro" class="bg-black pr-2.5 m-2.5 h-10 w-60 my-5 text-slate-100 text-center "> <a  class="archivo-black-regular" href="----" >SUMAR ALBUM  </a>  </div>
+    <!-- Formulario para agregar álbum -->
+    <form id="albumForm" class="bg-white p-6 rounded-lg shadow-lg max-w-lg mx-auto ">
+
+        <!-- Nombre del Álbum -->
+         
+        <div class="mb-4">
+            <label for="title" class="block text-gray-700 font-bold mb-2">Nombre del Álbum</label>
+            <input type="text" id="albumName" name="albumName" class="w-full p-2 border border-gray-300 rounded" required>
+            <p id="albumNameError" class="text-red-500 text-sm hidden">Este campo es obligatorio</p>
+        </div>
+
+        <!-- Descricion -->
+        <div class="mb-4">
+            <label for="descripcion" class="block text-gray-700  font-bold mb-2">Descripción</label>
+            <textarea id="descripcion" name="descripcion" rows="4" required></textarea>
+            <p id="artistError" class="text-red-500 text-sm hidden">Este campo es obligatorio</p>
+        </div>
+
+        <!-- Año de Lanzamiento -->
+        <div class="mb-4">
+            <label for="year" class="block text-gray-700 font-bold mb-2">Año de Lanzamiento</label>
+            <input type="number" id="year" name="year" class="w-full p-2 border border-gray-300 rounded" min="1900" max="2024" required>
+            <p id="yearError" class="text-red-500 text-sm hidden">Ingresa un año válido entre 1900 y 2024</p>
+        </div>
+
+        <!-- URL de la Imagen: -->
+        <div class="mb-4">
+            <label for="imagen" class="block text-gray-700 font-bold mb-2">URL de la Imagen:</label>
+            <input type="url" id="imagen" name="imagen" placeholder="Introduce la URL de la imagen" class="w-full p-2 border border-gray-300 rounded" required>
+
+            <p id="genreError" class="text-red-500 text-sm hidden">URL de la Imagen:</p>
+        </div>
+
+        <!-- Enviar -->
+        <button type="submit" class="bg-blue-600 text-white p-2 rounded hover:bg-blue-700 w-full">Agregar Álbum</button>
+        <section id="sumar">
+    </form>
+
+    <h2>Álbumes Añadidos</h2>
+
+
+    <div id="albumList"></div>
+
+
+
+   
+
+
+<script>
+    const menuButton = document.getElementById('menu-button');
+    const menuList = document.getElementById('menu-list');
+
+    //  boton del menu
+    menuButton.addEventListener('click', () => {
+        menuList.classList.toggle('hidden');
+    });
+</script>
+
+
 </body>
 </html>

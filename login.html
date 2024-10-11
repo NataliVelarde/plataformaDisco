@@ -4,16 +4,43 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="favicon (1).ico" type="image/x-icon">
-    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="addAlbum.js"></script>
+    <title>Ingresar</title>
     <link rel="shortcut icon" href="favicon (1).ico" type="image/x-icon">
     <link href="Stylo.css" rel="stylesheet" type="text/css">
 </head>
-<body class="body1">
-    <div class="Titulo"><h1>N T V G</h1></div>
-    <div>
+<body class="bg-neutral-950">
+    
+    <!--NAV BARRA NAVEGADORA-->
+    <nav class="bg-neutral-950 p-4">
+        <div class="flex justify-between items-center">
+            <h1 class="text-white text-xl font-bold hover:text-yellow-500"> <a class="hover:underline font-bold hover:text-yellow-500" onclick="goBack()">Atras</a> </h1>
+
+           
+
+        <button id="menu-button" class="block text-white focus:outline-none sm:hidden">
+            <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+            </svg>
+        </button>
+       <ul id="menu-list" class="hidden sm:flex sm:space-x-4 text-white text-lg">
+            <!--<li><a href="index.html" class="hover:underline font-bold hover:text-yellow-500">Volver</a></li> -->
+            <li><a href="index.html" class="hover:underline font-bold hover:text-yellow-500">Inicio</a></li>
+            <li><a href="addAlbum.html" class="hover:underline font-bold hover:text-yellow-500">Sumar Álbum</a></li>
+            <li><a href="tour.html" class="hover:underline font-bold hover:text-yellow-500">Tours</a></li>
+            <li><a href="login.html" class="hover:underline font-bold hover:text-yellow-500">Iniciar Sesión</a></li>
+        </ul>
+        </div>
+    </nav>
+    <div class="text-neutral-50 font-serif text-6xl text-center mt-1.5 p-1.5"><h1>N T V G</h1></div>
+    <BR>
+        <!--FORMULARIO INGRESO -->
+    <div class="flex justify-between items-center " >
         <form id="id" class="id Titulo4">
             <fieldset>
-                <legend class="Titulo">Formulario de Login</legend>
+                <div class="bg-gray-600   w-96 text-center  sm:p-4 lg:p-8  formulario-album">
+                <legend class="Titulo ">Formulario de Login</legend>
                 <br>
                 <div id="id">
                     <label for="mail">Email:</label>
@@ -26,19 +53,31 @@
                 </div>
                 <br>                
                 <div>
-                    <input type="submit" value="Loguearse">
+                    <input type="submit" value="Loguearse"  class="hover:text-green-500">
                 </div>
-                
+                <br>
+                <p >"¿Aún no sos miembro?"</p>
+                <a  href="./signUp.html" class="hover:text-yellow-500">Registrate</a>
+            </div>
                 <br>
             </fieldset>
-            <br>
-            <p >"¿Aún no sos miembro?"</p>
-            <a  href="./signUp.html">Registrate</a>
+           
         </form>
     </div>
-    <div class="titulos">
+   <!-- <div class="titulos">
         <a id="uno" href="./index.html"> <img src="atras.png2.png" alt="atras" class="atras"></a>
-    </div>
+    </div>-->
     
+
+    <!--menu/-->
+    <script>
+        const menuButton = document.getElementById('menu-button');
+        const menuList = document.getElementById('menu-list');
+
+       //  boton del menu
+        menuButton.addEventListener('click', () => {
+            menuList.classList.toggle('hidden');
+        });
+    </script>
 </body>
 </html>

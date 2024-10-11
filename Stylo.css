@@ -1,9 +1,10 @@
+/*  SE RESERVO PRIMEROS BODY PARA MIS HTML
 body{
     background-color: rgb(105, 100, 100);
 }
 .body1{
     background-color: rgb(168, 72, 8);
-}
+} */
 
 .Parrafo{
     color: rgb(7, 7, 7); 
@@ -16,6 +17,8 @@ body{
 
     
 }
+
+/*ex formato de NTVG */
 .Titulo{
     
     text-align: center;
@@ -33,12 +36,14 @@ padding: 7%;
 
 
   */
+
+  /*ID de tecto en centro*/
 #id{
     text-align: center;
    
     
 }
-
+/*podes ver mas aca abajo*/
 
 .Titulo2{
     color: rgb(243, 238, 238); 
@@ -52,7 +57,7 @@ padding: 7%;
    
 }
 .container{
-    border: 5px solid rgb(236, 236, 236);
+    border: 5px solid rgb(12, 12, 12);
     display: flex;
     justify-content: center;
 }
@@ -62,6 +67,7 @@ padding: 7%;
     justify-content: center;
     background-color: rgb(121, 121, 121); 
 }
+/* priemros direcciones album-fotos-*/
 .Titulo3{
     color: rgb(243, 238, 238); 
     background-color: rgb(168, 72, 8);   
@@ -103,6 +109,7 @@ padding: 7%;
     width: 100%;
   
 }
+/*MARCO DE GRIS DE EX REGISTRO - DOS*/
 
 #dos{
    
@@ -132,7 +139,7 @@ background-size: cover;
 
 }
 #album2{
-    background-image: url(album1.png);
+    background-image: url(album22.png);
     background-repeat: no-repeat;
     background-size: cover;
     
@@ -168,3 +175,58 @@ background-size: cover;
         border-radius: 50px; 
           
      }
+
+.navbar {
+        width: 100%;
+        background-color: rgba(0, 0, 0, 0.4);
+        padding: 10px;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 100;
+    }
+
+
+    .bebas-neue-regular {
+        font-family: "Bebas Neue", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+      } 
+
+      /* Estilo para el formulario de agregar álbum */
+.formulario-album {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: rgba(50, 50, 50, 0.4);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+.titulo {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#margen { 
+
+    border-width: 10px;
+}
+
+.formulario-albumOtro {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: rgba(50, 50, 50, 0.4);
+    padding: 60px;
+    border-radius: 20px;
+    box-shadow: 0 0 40px rgba(0, 0, 0, 0.5);
+ }
+
+#stylo {
+    border-radius: 50px;
+}

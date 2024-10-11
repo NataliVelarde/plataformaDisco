@@ -4,32 +4,62 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=, initial-scale=1.0">
     <link rel="shortcut icon" href="favicon (1).ico" type="image/x-icon">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="addAlbum.js"></script>
     <title>Document</title>
     <link rel="shortcut icon" href="favicon (1).ico" type="image/x-icon">
     <link href="Stylo.css" rel="stylesheet" type="text/css">
 </head>
-<body class="body">
-    <div class="Titulo"><h1>N T V G</h1></div>
-    <div id="dos">
-  
+<body class="bg-neutral-950">
+    
+<!--barra navegadora-->
+    <nav class="bg-neutral-950 p-4">
+        <div class="flex justify-between items-center">
+        <h1 class="text-white text-xl font-bold hover:text-yellow-500"> <a class="hover:underline font-bold hover:text-yellow-500" onclick="goBack()">Atras</a> </h1>
+           
+
+        <button id="menu-button" class="block text-white focus:outline-none sm:hidden">
+            <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+            </svg>
+        </button>
+       <ul id="menu-list" class="hidden sm:flex sm:space-x-4 text-white text-lg">
+           
+            <li><a href="index.html" class="hover:underline font-bold hover:text-yellow-500">Inicio</a></li>
+            <li><a href="addAlbum.html" class="hover:underline font-bold hover:text-yellow-500">Sumar Álbum</a></li>
+            <li><a href="tour.html" class="hover:underline font-bold hover:text-yellow-500">Tours</a></li>
+            <li><a href="login.html" class="hover:underline font-bold hover:text-yellow-500">Iniciar Sesión</a></li>
+        </ul>
+        </div>
+    </nav>
+    <div class="text-neutral-50 font-serif text-6xl text-center mt-1.5 p-1.5"><h1>N T V G</h1></div>
+    <br>
+   
+  <div class="flex justify-between items-center">
     <form  action="Hola" method="" id="id" class=" Titulo4">
+        <div class="bg-gray-600   w-96 text-center  sm:p-4 lg:p-8  formulario-album ">
         <fieldset>
-            <legend class="Titulo">Registrate</legend>
-       <div>
+            <legend class="Titulo ">Registrate</legend>
+       <div >
         <label for="Nombre">Nombre</label>
+        <br>
         <input id="Nombre" type="text" name="Nombre" placeholder=" Nombre completo">
         </div>
+
         <div><label for="Apellido">Apellido</label>
+            <br>
         <input id="Apellido" type="text" name="Apellido" placeholder=" Apellido"></div>
 
             <div><label for="Contraseña">Contraseña</label>
+                <br>
 
                 <input id="Contraseña" type="password" name=" Contraseña" placeholder=" Ingrese su contraseña"></div>
                     
-                <div><label for="Correo">Email</label>
-
+        <div><label for="Correo">Email</label>
+            <br>
         <input id="Correo" type="email" name="Correo electronico" placeholder=" Ejemplo@gmail.com"></div>
         <div>
+            
            <label for="F"> Femenino </label>
             <input id="F" name="Genero" type="radio" value="F">           
             <label for="M"> Masculino </label>
@@ -37,15 +67,26 @@
 
         </div>
     
-        <input type="submit">
+       <input type="submit" class="hover:text-yellow-500">
         <br>
-        
+        <a href="index.html" class="hover:text-yellow-500"> Volver</a>
+    </div>
+
+</div>
   
     </form>
     
 
-    <a href="index.html"> Volver</a>
+    <script>
+        const menuButton = document.getElementById('menu-button');
+        const menuList = document.getElementById('menu-list');
+
+       //  boton del menu
+        menuButton.addEventListener('click', () => {
+            menuList.classList.toggle('hidden');
+        });
+    </script>
  
-</div>
+
 </body>
 </html>

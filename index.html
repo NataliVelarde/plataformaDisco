@@ -5,20 +5,52 @@
     <meta name="viewport" content="width=, initial-scale=1.0">
     <title>NTVG</title>
     <link rel="shortcut icon" href="favicon (1).ico" type="image/x-icon">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="addAlbum.js"></script>
     <link href="Stylo.css" rel="stylesheet" type="text/css">
 </head>
-<body>
-    <div class="Titulo"><h1>N T V G</h1></div>
+<body class="bg-neutral-950">
     
-   <div class="Parrafo"><p>No Te Va Gustar se formó en 1994 en Uruguay, cuando los integrantes de la banda tenían 16 años. Después de algunos movimientos iniciales en la formación, el grupo se estabilizó como un trío de rock and roll de bajo (Mateo Moreno), guitarra (Emiliano Brancciari) y batería (Pablo Abdala).
+   
+    <!--barra de navegación-->
+    <nav class="bg-neutral-950 p-4">
+        <div class="flex justify-between items-center">
+            <h1 class="text-white text-xl font-bold hover:text-yellow-500"> <a class="hover:underline font-bold hover:text-yellow-500" onclick="goBack()">Atras</a> </h1>
+
+           
+
+        <button id="menu-button" class="block text-white focus:outline-none sm:hidden">
+            <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+            </svg>
+            
+        </button>
+       <ul id="menu-list" class="hidden sm:flex sm:space-x-4 text-white text-lg">
+            <li><a href="index.html" class="hover:underline font-bold hover:text-yellow-500">Inicio</a></li>
+            <!-- <li><a href="index.html" class="hover:underline">Inicio</a></li> -->
+            <li><a href="addAlbum.html" class="hover:underline font-bold hover:text-yellow-500">Álbum</a></li>
+            <li><a href="tour.html" class="hover:underline font-bold hover:text-yellow-500">Tours</a></li>
+            <li><a href="login.html" class="hover:underline font-bold hover:text-yellow-500">Iniciar Sesión</a></li>
+        </ul>
+        </div>
+    </nav>
+
+    <div class="text-neutral-50 font-serif text-6xl text-center mt-1.5 p-1.5"><h1>N T V G</h1></div>
+   <div class="Parrafo"> <br> <p class="text-black text-xl font-bold"> No Te Va a Gustar </p> <br>
+    <p>No Te Va Gustar se formó en 1994 en Uruguay, cuando los integrantes de la banda tenían 16 años. Después de algunos movimientos iniciales en la formación, el grupo se estabilizó como un trío de rock and roll de bajo (Mateo Moreno), guitarra (Emiliano Brancciari) y batería (Pablo Abdala).
     <br>Entre 1996 y 1997, con la inclusión de percusión y vientos, la música de No Te Va Gustar comenzó a evolucionar fusionando varios ritmos americanos (reggae, candombe, ska, salsa) sin dejar de lado su esencia roquera, influenciada por el rock argentino, como ellos mismos declaran
    </p></div> 
 
 
 
 
-<div class="container">
+   <div class="container">
     <div class="div"><img src="NTVG.png" alt="NTV"class="div"></div>
+
+
+</div>
+    <!-- Lo borre va entra pagina
+
     <div class="div">
         <div class="Titulo2" id="id"><p><strong>SOLO DE NOCHE:</strong></p>
         </div>
@@ -48,16 +80,49 @@
     </div>
     
     <div class="Titulo3" id="id"><p><strong><a href="signUp.html"> REGISTRARME </a></strong></p>
-    </div>
+    </div> --->
 
 
-    </div>
+   
    
 
 </div>
 
-<div>
-    <iframe style="border-radius:12px" src="https://open.spotify.com/embed/album/314m9ZiGXnoaDtXp96LlHs?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+
 </div>
+</div>
+
+<div>
+
+
+  <br>
+  <div class="container"> <h1 class="text-neutral-50 font-serif text-6xl text-center mt-1.5 p-1.5 " >VIDEOCLIPS</h1></div>
+    
+      
+       <div class="container" id="Stylo">
+           <a href="https://www.youtube.com/channel/UCe5tgyOlUWikwiYHEQ02L2Q"><img src="videoYoutu.png" class="w-100 imghocer Stylo"></a>
+       </div>
+
+       <div class="text-white text-xl font-bold hover:text-yellow-500 container">
+          <a  href="https://www.youtube.com/channel/UCe5tgyOlUWikwiYHEQ02L2Q">MÁS VIDEOS</a>
+       </div>
+    </div>
+ </div>
+</div>
+
+
+
+<!--menu/-->
+<script>
+    const menuButton = document.getElementById('menu-button');
+    const menuList = document.getElementById('menu-list');
+
+    //  boton del menu
+    menuButton.addEventListener('click', () => {
+        menuList.classList.toggle('hidden');
+    });
+</script>
+
+
 </body>
 </html>
